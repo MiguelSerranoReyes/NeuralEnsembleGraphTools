@@ -1,75 +1,103 @@
 
 # Identifying Neuronal Ensembles: A Graph Theoretical Approach
 
-This repository contains the Jupyter notebook and supporting Python code for the analysis of neuronal ensembles using graph theory, as described in the chapter "Identifying Neuronal Ensembles: A Graph Theoretical Approach".
+Este repositorio contiene el Jupyter notebook y el código Python de soporte para el análisis de conjuntos neuronales utilizando teoría de grafos, como se describe en el capítulo "Identifying Neuronal Ensembles: A Graph Theoretical Approach".
 
-## Contents
+## Contenidos
 
-- `Identifying_Neuronal_Ensembles.ipynb`: The main Jupyter notebook for the analysis.
-- `neurolab.py`: Python module containing utility functions used in the notebook.
-- `raster.csv`: Sample data file used as an input for the demonstrations in the notebook.
+- `Identifying_Neuronal_Ensembles.ipynb`: Jupyter notebook principal para el análisis.
+- `neurolab.py`: Módulo Python que contiene funciones de utilidad utilizadas en el notebook.
+- `raster.csv`: Archivo de datos de muestra utilizado como entrada para las demostraciones en el notebook.
 
-## Installation
+## Instalación
 
-### Prerequisites
+### Prerrequisitos
 
-Ensure you have Python and Visual Studio Code installed on your system. You can download Python from [python.org](https://www.python.org/downloads/) and Visual Studio Code from [code.visualstudio.com](https://code.visualstudio.com/).
+Asegúrate de tener Python y Visual Studio Code instalados en tu sistema. Puedes descargar Python desde [python.org](https://www.python.org/downloads/) y Visual Studio Code desde [code.visualstudio.com](https://code.visualstudio.com/).
 
-### Setup
+#### Verificar instalación de Git
 
-1. **Clone the repository**
+Para clonar el repositorio necesitarás Git. Para verificar si ya está instalado y configurado correctamente en tu sistema, abre la terminal y ejecuta:
 
-   Open Visual Studio Code, then open the terminal (Terminal -> New Terminal) and run the following commands:
+```bash
+git --version
+```
+
+Si ves un número de versión, Git está instalado. Si no, necesitarás instalarlo. Puedes descargar Git desde [git-scm.com](https://git-scm.com/downloads).
+
+### Configuración de Visual Studio Code
+
+Para configurar Python y Jupyter en Visual Studio Code, sigue estos pasos:
+
+1. **Instalar la extensión de Python para Visual Studio Code:**
+
+   Abre Visual Studio Code, ve a la pestaña de extensiones (icono de cuadrados en el lado izquierdo), busca 'Python', y selecciona e instala la extensión oficial de Python ofrecida por Microsoft.
+
+2. **Instalar la extensión de Jupyter para Visual Studio Code:**
+
+   De la misma manera, busca y instala la extensión 'Jupyter'.
+
+3. **Instalar la extensión de Git:**
+
+   Instala la extensión de Git para un mejor seguimiento del versionado dentro de Visual Studio Code buscando 'Git' en las extensiones y seleccionando la adecuada.
+
+### Configuración del Repositorio
+
+1. **Clonar el repositorio**
+
+   Abre Visual Studio Code, luego abre la terminal (Terminal -> Nueva Terminal) y ejecuta los siguientes comandos:
 
    ```bash
    git clone https://github.com/MiguelSerranoReyes/NeuralEnsembleGraphTools.git
    cd NeuralEnsembleGraphTools
    ```
 
-2. **Create a virtual environment**
+2. **Crear un entorno virtual**
 
-   In the VSCode terminal, execute the following:
+   En la terminal de VSCode, ejecuta lo siguiente:
 
-   - **On Linux:**
+   - **En Linux:**
 
      ```bash
      python3 -m venv .venv
      source .venv/bin/activate
      ```
 
-   - **On Windows:**
+   - **En Windows:**
 
      ```cmd
      python -m venv .venv
      .\.venv\Scripts\activate
      ```
 
-3. **Install the required packages**
+3. **Instalar los paquetes requeridos**
 
-   With the virtual environment activated, install the required dependencies:
+   Con el entorno virtual activado, instala las dependencias requeridas:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-## Usage
+## Uso
 
-With the setup complete, you can now open the project in Visual Studio Code:
+Con la configuración completa, ahora puedes abrir el proyecto en Visual Studio Code:
 
-1. **Open VSCode**
+1. **Abrir VSCode**
    
-   Launch Visual Studio Code, select 'File' -> 'Open Folder', and choose the directory where you cloned the repository.
+   Lanza Visual Studio Code, selecciona 'Archivo' -> 'Abrir Carpeta', y elige el directorio donde clonaste el repositorio.
 
-2. **Start the Jupyter Notebook**
+2. **Iniciar el Jupyter Notebook**
 
-   Open the terminal in VSCode (if not already open) and run:
+   Abre la terminal en VSCode (si no está ya abierta) y ejecuta:
 
    ```bash
    jupyter notebook
    ```
 
-   Navigate to `Identifying_Neuronal_Ensembles.ipynb` in the Jupyter notebook UI to open and run the notebook.
+   En la interfaz de usuario de Jupyter Notebook, navega hasta `Identifying_Neuronal_Ensembles.ipynb` para abrir y ejecutar el notebook.
 
-## Contributing
+   Este notebook contiene el código utilizado para el análisis descrito en el capítulo del libro. Explora y ejecuta las celdas para entender cómo se aplica la teoría de grafos al análisis de conjuntos neuronales.
 
-Contributions to this project are welcome. Please feel free to fork the repository and submit pull requests.
+## Contribuciones
+
+Las contribuciones a este proyecto son bienvenidas. Por favor, siéntete libre de hacer fork del repositorio y enviar pull requests.
